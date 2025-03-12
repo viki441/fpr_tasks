@@ -5,5 +5,5 @@ triangleAreaList [a, b, c] = sqrt (s * (s - a) * (s - b) * (s - c))
     s = (a + b + c) / 2
 main :: IO ()
 main = do
-  print(triangleArea [2.5 4])
-  print(triangleArea [2.0 4.0 6.0])
+  print(triangleAreaList [2.5, 4])
+  print(triangleAreaList [2.0, 4.0, 6.0])
