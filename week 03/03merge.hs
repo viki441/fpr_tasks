@@ -1,11 +1,11 @@
 merge :: [Int] -> [Int] -> [Int]
-merge xs ys = [z | z <- merge' xs ys]
+merge list1 list2 = [z | z <- merge' list1 list2]
   where
-    merge' [] ys = ys
-    merge' xs [] = xs
-    merge' (x:xs') (y:ys') 
-      | x < y     = x : merge' xs' (y:ys')
-      | otherwise = y : merge' (x:xs') ys'
+    merge' [] list2 = list2
+    merge' list1 [] = list1
+    merge' (x:list1') (y:list2') 
+      | x < y     = x : merge' list1' (y:list2')
+      | otherwise = y : merge' (x:list1') list2'
 
 
 main :: IO ()
