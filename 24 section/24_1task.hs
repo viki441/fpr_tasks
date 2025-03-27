@@ -21,7 +21,7 @@ allEven :: Int -> [Int]
 allEven x = [n | n <- [1..x], isEven n]
 --E
 allEvens :: [Int]
-all Evens = [x | x <- [2..], x `mod` 2 == 0]
+allEvens = [x | x <- [2..], x `mod` 2 == 0]
 --can call take 2 allEvens
 
 --F
