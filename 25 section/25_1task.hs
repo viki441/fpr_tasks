@@ -4,4 +4,5 @@ say n
     | otherwise = "Invalid input"
 
 main :: IO ()
-main = print (say 3)
+main = do
+    print (say 3)
