@@ -5,4 +5,4 @@ split p xs = (filter p xs, filter (not . p) xs)
 
 main :: IO ()
 main = do
-  print(dotProd [1,2,3] [4,5,6])
+  print(split odd [2,4,3,4,2,1,2,3])
